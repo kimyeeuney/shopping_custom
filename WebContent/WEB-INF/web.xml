@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>shopping_custom</display-name>
+  
+ 
+  
+  
+<!-- 게시판 -->
+	<servlet>
+		<servlet-name>BoardFrontController</servlet-name>
+  		<servlet-class>net.board.action.BoardFrontController</servlet-class>
+  </servlet>
+<servlet-mapping>
+		<servlet-name>BoardFrontController</servlet-name>
+		<url-pattern>*.bo</url-pattern>
+</servlet-mapping>
+
+
+<!-- custom -->
+	<servlet>
+		<servlet-name>OrderCustomFrontController</servlet-name>
+  		<servlet-class>net.custom.action.OrderCustomFrontController</servlet-class>
+  </servlet>
+<servlet-mapping>
+		<servlet-name>OrderCustomFrontController</servlet-name>
+		<url-pattern>*.co</url-pattern>
+</servlet-mapping>
+
+
+<!-- 광고 -->
+	<servlet>
+		<servlet-name>AdFrontController</servlet-name>
+  		<servlet-class>net.admin.ad.action.AdFrontController</servlet-class>
+  </servlet>
+<servlet-mapping>
+		<servlet-name>AdFrontController</servlet-name>
+		<url-pattern>*.ad</url-pattern>
+</servlet-mapping>
+
+
+<!-- 판매자센터 -->
+	<servlet>
+		<servlet-name>SaleFrontController</servlet-name>
+  		<servlet-class>net.admin.sale.action.SaleFrontController</servlet-class>
+  </servlet>
+<servlet-mapping>
+		<servlet-name>SaleFrontController</servlet-name>
+		<url-pattern>*.sa</url-pattern>
+</servlet-mapping>
+
+  
+<!-- 갤러리 -->
+<servlet>
+		<servlet-name>GalleryFrontController</servlet-name>
+  		<servlet-class>net.gallery.action.GalleryFrontController</servlet-class>
+  </servlet>
+<servlet-mapping>
+		<servlet-name>GalleryFrontController</servlet-name>
+		<url-pattern>*.ua</url-pattern>
+</servlet-mapping>
+	
+	
+
+	
+	<!-- 찜하기(장바구니겸) -->
+	<servlet>
+		<description>
+		</description>
+		<display-name>ChoiceFrontController</display-name>
+		<servlet-name>ChoiceFrontController</servlet-name>
+		<servlet-class>
+		net.choice.action.ChoiceFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChoiceFrontController</servlet-name>
+		<url-pattern>*.ca</url-pattern>
+	</servlet-mapping>
+
+	
+	<!-- 멤버 -->
+	<servlet>
+		<description>
+		</description>
+		<display-name>MemberFrontController</display-name>
+		<servlet-name>MemberFrontController</servlet-name>
+		<servlet-class>net.member.action.MemberFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MemberFrontController</servlet-name>
+		<url-pattern>*.me</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 검색 -->
+	<servlet> 
+		<description>
+		</description>
+		<display-name>SearchFrontController</display-name>
+		<servlet-name>SearchFrontController</servlet-name>
+		<servlet-class>net.search.action.SearchFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchFrontController</servlet-name>
+		<url-pattern>*.sc</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 장바구니 -->
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		BasketFrontController</display-name>
+		<servlet-name>BasketFrontController</servlet-name>
+		<servlet-class>
+		net.basket.action.BasketFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BasketFrontController</servlet-name>
+		<url-pattern>*.ba</url-pattern>
+	</servlet-mapping>
+	
+	<!-- 상품 -->
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		GoodsFrontController</display-name>
+		<servlet-name>GoodsFrontController</servlet-name>
+		<servlet-class>
+		net.goods.action.GoodsFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GoodsFrontController</servlet-name>
+		<url-pattern>*.go</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<description>
+		</description>  
+		<display-name>
+		AdminGoodsFrontController</display-name>
+		<servlet-name>AdminGoodsFrontController</servlet-name>
+		<servlet-class>
+		net.admin.goods.action.AdminGoodsFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminGoodsFrontController</servlet-name>
+		<url-pattern>*.ag</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>  
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	  
+	
+	  
+	
+</web-app>
